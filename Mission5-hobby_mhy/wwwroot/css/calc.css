@@ -1,0 +1,40 @@
+﻿#calculator {
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+}
+
+body {
+    background-color: #D7E6DD;
+}
+
+input[type=number], input[type=text] {
+    width: 25%;
+    padding: 5px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-color: #D7E6DD;
+}
+
+button {
+    width: 100%;
+    background-color: #013126;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #015441;
+    }
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}

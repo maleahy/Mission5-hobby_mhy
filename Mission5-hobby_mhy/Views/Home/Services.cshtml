@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Services Journaling Lessons";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"]</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <br />
+    <br />
+    <div class="container mt-3">
+        <div class="row">
+            <!-- Text container -->
+            <div class="col-md-6">
+                <h2 style=" font-size: 4rem;">
+                    What you get:</h2style>
+                    <br /><br />
+                <h4>
+                    - Scrapbooking and journaling supplies <br /><br />
+                    - One on one tutoring<br /><br />
+                    - Personalized journal prompts<br /><br />
+                    - Help goal setting<br /><br />
+                        ... and more!<br /><br /><br /><br />
+                </h4>
+            </div>
+            <!-- Calculator container -->
+            <div class="col-md-4">
+                <div class="calculator">
+                    <label for="hours">Hours Needed:</label>
+                    <input type="number" id="hours" min="1" class="form-control">
+                    <p>Charge Per Hour: $<input style="border: none; background-color: transparent;" class="form-control" type="text" id="chargePerHour" value="25" readonly><br/>
+
+                    Flat Fee: $<input style="border: none; background-color: transparent;" class="form-control" type="text" id="flatFee" value="50" readonly></p>
+                    <button id="calculate" class="btn">Calculate Total</button>
+                    <p>Total Cost: $<input style="border: none; background-color: transparent;" class="form-control" type="text" id="totalCost" readonly></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/script.js"></script>
+
+</body>
+</html>

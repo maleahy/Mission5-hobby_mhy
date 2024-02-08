@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Mission5_hobby_mhy</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\calc.css" />
+    <Content Remove="wwwroot\js\appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Home\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\fonts\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+</Project>
